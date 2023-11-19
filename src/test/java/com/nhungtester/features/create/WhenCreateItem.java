@@ -1,4 +1,4 @@
-package com.nhungtester.features.order;
+package com.nhungtester.features.create;
 
 import com.nhungtester.entity.Unit;
 import com.nhungtester.entity.Product;
@@ -23,9 +23,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static java.lang.Math.round;
 
 @RunWith(SerenityRunner.class)
@@ -45,7 +42,7 @@ public class WhenCreateItem {
         nhungtester.can(BrowseTheWeb.with(herBrowser));
     }
 
-    /*@WithTag("testcase01")
+    @WithTag("testcase01")
     @Test
     public void should_succeed_with_out_of_stock_when_create_a_new_product_with_stockQuantity_equal_0() {
         Product shirt = new Product(0,10,1, 4.5,10,100,10,10);
@@ -146,7 +143,7 @@ public class WhenCreateItem {
                         )
                         .otherwise(Ensure.that(shippingTimeNotPresent).isTrue())
         );
-    }*/
+    }
 
 
     @WithTag("testcase04")
